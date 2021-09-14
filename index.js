@@ -396,7 +396,8 @@ function process_commands_query(query, mapKey, userid) {
     const m = query.toLowerCase().match(regex);
     if (m && m.length) {
         const cmd = (m[1]||'').trim();
-        const args = (m[2]||'').trim();
+        const args = (m[2]||'').trim().replace(/[^\w\s]|_/g, "").replace(/\s+/g, " ");
+        
 
         switch(cmd) {
             case 'help':
