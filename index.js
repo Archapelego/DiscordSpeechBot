@@ -451,7 +451,7 @@ function process_commands_query(query, mapKey, userid) {
                         break;
                     default:
                         for (let k of Object.keys(GENRES)) {
-                            console.log(' ' + k);
+                            // console.log(' ' + k);
                             if (GENRES[k].includes(args)) {
                                 out = _CMD_GENRE + ' ' + k;
                             }
@@ -887,7 +887,7 @@ async function transcribe_witai(buffer) {
         if (witAI_lastcallTS != null) {
             let now = Math.floor(new Date());    
             while (now - witAI_lastcallTS < 1000) {
-                console.log('sleep')
+                // console.log('sleep')
                 await sleep(100);
                 now = Math.floor(new Date());
             }
