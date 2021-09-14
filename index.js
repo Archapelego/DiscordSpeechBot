@@ -450,6 +450,7 @@ function process_commands_query(query, mapKey, userid) {
                         break;
                     default:
                         for (let k of Object.keys(GENRES)) {
+                            console.log(' ' + k);
                             if (GENRES[k].includes(args)) {
                                 out = _CMD_GENRE + ' ' + k;
                             }
