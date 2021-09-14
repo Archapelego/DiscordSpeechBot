@@ -202,11 +202,11 @@ const GENRES = {
     'hip-hop': ['hip-hop', 'hip hop', 'hiphop', 'rap'],
     'rock': ['rock'],
     'dance': ['dance'],
-    'trance': ['techno'],
     'trance': ['trance'],
     'groove': ['groove'],
     'classical': ['classical'],
     'techno': ['techno'],
+    'ska': ['ska'],
 
 }
 
