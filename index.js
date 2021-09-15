@@ -284,6 +284,7 @@ function getHelpString() {
     let out = '**VOICE COMMANDS:**\n'
         out += '```'
         out += 'baby help\n'
+        out += 'baby leave\n'
         out += 'baby play [random, favorites, <genre> or query]\n'
         out += 'baby skip\n'
         out += 'baby pause/resume\n'
@@ -402,6 +403,9 @@ function process_commands_query(query, mapKey, userid) {
         switch(cmd) {
             case 'help':
                 out = _CMD_HELP;
+                break;    
+            case 'leave':
+                out = _CMD_LEAVE;
                 break;
             case 'skip':
                 out = _CMD_SKIP;
@@ -441,6 +445,7 @@ function process_commands_query(query, mapKey, userid) {
                 break;
             case 'play':
             case 'player':
+            case 'played':
                 switch(args) {
                     case 'random':
                         out = _CMD_RANDOM;
