@@ -284,7 +284,6 @@ function getHelpString() {
     let out = '**VOICE COMMANDS:**\n'
         out += '```'
         out += 'baby help\n'
-        out += 'baby leave\n'
         out += 'baby play [random, favorites, <genre> or query]\n'
         out += 'baby skip\n'
         out += 'baby pause/resume\n'
